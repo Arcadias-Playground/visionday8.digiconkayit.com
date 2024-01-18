@@ -1,0 +1,21 @@
+﻿.AlseinTable {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 3px;
+}
+
+    .AlseinTable td {
+        padding: 0 3px;
+    }
+
+        .AlseinTable td:first-child {
+            width: 8px;
+            color: #ff0000;
+        }
+
+        .AlseinTable td:nth-child(2) {
+            background-color: #1c79be;
+            color: white;
+            border-radius: 3px;
+            text-align: center;
+        }

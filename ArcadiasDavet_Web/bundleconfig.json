@@ -1,0 +1,32 @@
+[
+  {
+    "outputFileName": "css/AlseinCSS.min.css",
+    "inputFiles": [
+      "css/AlseinCSS.css"
+    ]
+  },
+  {
+    "outputFileName": "css/bootstrap-material-datetimepicker.min.css",
+    "inputFiles": [
+      "css/bootstrap-material-datetimepicker.css"
+    ]
+  },
+  {
+    "outputFileName": "js/AlseinJS.min.js",
+    "inputFiles": [
+      "js/AlseinJS.js"
+    ]
+  },
+  {
+    "outputFileName": "css/cropper.min.css",
+    "inputFiles": [
+      "css/cropper.css"
+    ]
+  },
+  {
+    "outputFileName": "js/cropper.min.js",
+    "inputFiles": [
+      "js/cropper.js"
+    ]
+  }
+]

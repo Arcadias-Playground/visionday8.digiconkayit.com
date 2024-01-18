@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="YakaKartiRapor.aspx.cs" Inherits="ArcadiasDavet_Web.Admin.Rapor.YakaKartiRapor" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" %>

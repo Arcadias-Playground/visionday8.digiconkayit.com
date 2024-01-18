@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="GirisRapor.aspx.cs" Inherits="ArcadiasDavet_Web.Admin.Rapor.GirisRapor" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"%>

@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SmsLog.aspx.cs" Inherits="ArcadiasDavet_Web.Admin.MailIslemleri.SmsLog" ContentType="text/plain"%>

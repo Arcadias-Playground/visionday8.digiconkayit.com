@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.arcadias.davet" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Arcadias Davet QR</name>
+    <description>Sample Apache Cordova App</description>
+    <author email="serhat@arcadiastech.com" href="https://www.arcadiastech.com">
+        Arcadias Tech.
+    </author>
+    <content src="index.html" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <platform name="android">
+        <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
+            <application android:usesCleartextTraffic="true" />
+        </edit-config>
+        <allow-intent href="market:*" />
+        <preference name="hostname" value="localhost" />
+        <preference name="android-build-tool" value="gradle" />
+        <preference name="android-minSdkVersion" value="23" />
+        <preference name="android-targetSdkVersion" value="30" />
+        <splash density="ldpi" src="AppGorsel/android/splash/portrait-ldpi.png" />
+        <splash density="mdpi" src="AppGorsel/android/splash/portrait-mdpi.png" />
+        <splash density="hdpi" src="AppGorsel/android/splash/portrait-hdpi.png" />
+        <splash density="xhdpi" src="AppGorsel/android/splash/portrait-xhdpi.png" />
+        <splash density="xxhdpi" src="AppGorsel/android/splash/portrait-xxhdpi.png" />
+        <splash density="xxxhdpi" src="AppGorsel/android/splash/portrait-xxxhdpi.png" />
+        <icon background="AppGorsel/android/icon/background/ldpi.png" density="ldpi" foreground="AppGorsel/android/icon/foreground/ldpi.png" />
+        <icon background="AppGorsel/android/icon/background/mdpi.png" density="mdpi" foreground="AppGorsel/android/icon/foreground/mdpi.png" />
+        <icon background="AppGorsel/android/icon/background/hdpi.png" density="hdpi" foreground="AppGorsel/android/icon/foreground/hdpi.png" />
+        <icon background="AppGorsel/android/icon/background/xhdpi.png" density="xhdpi" foreground="AppGorsel/android/icon/foreground/xhdpi.png" />
+        <icon background="AppGorsel/android/icon/background/xxhdpi.png" density="xxhdpi" foreground="AppGorsel/android/icon/foreground/xxhdpi.png" />
+        <icon background="AppGorsel/android/icon/background/xxxhdpi.png" density="xxxhdpi" foreground="AppGorsel/android/icon/foreground/xxxhdpi.png" />
+    </platform>
+
+    <preference name="Orientation" value="portrait" />
+</widget>

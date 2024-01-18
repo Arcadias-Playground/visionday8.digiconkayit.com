@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="ArcadiasDavet">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <title>Arcadias Davet App</title>
+    </head>
+    <body ng-controller="BodyController" style="background: linear-gradient(274deg, rgba(117,193,230,1) 0%, rgba(31,137,201,1) 100%);">
+
+        <div class="container">
+            <div class="mb-2" style="background-color:#ffffff; border:1px solid black; border-radius:10px; padding:6px;">
+                <img src="img/logo.png" class="w-100"/>
+            </div>
+            <p id="UUID" style="background-color:#ffffff; border:1px solid black; border-radius:10px; padding:6px; font-weight:bold" class="text-center"></p>
+            <p id="TarihSaat" style="background-color:#ffffff; border:1px solid black; border-radius:10px; padding:6px; font-weight:bold" class="text-center"></p>
+        </div>
+
+        <div class="container" ng-view></div>
+
+        <div style="position:fixed; bottom:0; left:0; padding: 3%; width: 100%; text-align: center;">
+            <img src="img/dev_by_arcadias.png" style="width: 50%" />
+        </div>
+
+        <div id="Uyari" class="modal" tabindex="-1" role="dialog" aria-hidden="true" data-bs-backdrop="static">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header" id="UyariHead">
+                        <h5 class="modal-title" id="UyariBaslik"></h5>
+                    </div>
+                    <div class="modal-body" id="UyariIcerik">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Kapat</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="cordova.js"></script>
+        <script src="js/lib/jquery-3.6.0.min.js"></script>
+        <script src="js/lib/bootstrap.min.js"></script>
+        <script src="js/lib/angular.min.js"></script>
+        <script src="js/lib/angular-route.js"></script>
+        <script src="js/lib/angular-sanitize.min.js"></script>
+        <script src="js/lib/moment-with-locales.min.js"></script>
+
+        <script src="js/Controller/index.js"></script>
+        <script src="js/Controller/angular-setupcore.js"></script>
+        <script src="js/Controller/BodyController.js"></script> 
+        <script src="js/Controller/AnaSayfaController.js"></script> 
+    </body>
+</html>

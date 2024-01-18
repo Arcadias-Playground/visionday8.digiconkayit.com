@@ -1,0 +1,46 @@
+<div class="row">
+    <div class="col-md-12" ng-if="!Yukleniyor">
+        <p class="text-center">
+            <span class="btn btn-success" ng-click="Scan()">
+                QR Oku
+            </span>
+        </p>
+        <div>
+            <table style="border-color:#000" class="table table-bordered">
+                <thead>
+                    <tr style="font-weight:bold">
+                        <th>Katılımcı</th>
+                        <th class="text-center" style="max-width:250px;">Katılımcı Tipi</th>
+                        <th style="width:70px;" class="text-center">Tarih</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="Giris in GirisListesi">
+                        <td style="vertical-align: middle">
+                            {{Giris.KatilimciBilgisi.AdSoyad}}
+                        </td>
+                        <td style="vertical-align: middle" class="text-center">
+                            {{Giris.KatilimciBilgisi.KatilimciTipiBilgisi.KatilimciTipi}}
+                        </td>
+                        <td class="text-center" style="font-size:10px">
+                            <div>
+                                {{moment(Giris.EklenmeTarihi).format('D.M.YYYY')}}
+                            </div>
+                            <div>
+                                {{moment(Giris.EklenmeTarihi).format('HH:mm:ss')}}
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="col-md-12 text-center" ng-if="Yukleniyor">
+        <p>
+            <img src="img/loadspinner.gif" style="width:47px;"/>
+        </p>
+        <p>
+            İşlem yapılıyor. Lütfen bekleyin.
+        </p>
+    </div>
+</div>

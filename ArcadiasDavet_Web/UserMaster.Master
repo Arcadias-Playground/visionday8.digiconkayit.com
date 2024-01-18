@@ -1,0 +1,90 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="UserMaster.master.cs" Inherits="ArcadiasDavet_Web.UserMaster" %>
+
+<!DOCTYPE html>
+
+<html class="no-js " lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+    <meta name="description" content="Arcadias Tech digiAbstract" />
+    <meta name="author" content="Altay Serhat İnan (Arcadias Tech) [serhat@arcadiastech.com / +90 506 953 14 36 / +90 507 574 16 40]" />
+
+    <title>Arcadias Tech digiAbstract Admin Panel</title>
+
+    <link rel="icon" href='<%=ResolveClientUrl("~/Gorseller/favicon.ico") %>' type="image/x-icon" />
+
+    <link rel="stylesheet" href='<%=ResolveClientUrl("~/css/bootstrap.min.css") %>' />
+    <link rel="stylesheet" href='<%=ResolveClientUrl("~/css/style.min.css") %>' />
+    <link rel="stylesheet" href='<%=ResolveClientUrl("~/css/all.min.css") %>' />
+    <link rel="stylesheet" href='<%=ResolveClientUrl($"~/css/AlseinCSS.min.css?t={DateTime.Now.Ticks}") %>' />
+
+    <script type="text/javascript" src='<%=ResolveClientUrl("~/js/libscripts.bundle.js") %>'></script>
+    <script type="text/javascript" src='<%=ResolveClientUrl("~/js/vendorscripts.bundle.js") %>'></script>
+    <script type="text/javascript" src='<%=ResolveClientUrl("~/js/mainscripts.bundle.js") %>'></script>
+    <script type="text/javascript" src='<%=ResolveClientUrl("~/js/bootstrap-notify.min.js") %>'></script>
+    <script type="text/javascript" src='<%=ResolveClientUrl($"~/js/AlseinJS.js?t={DateTime.Now.Ticks}") %>'></script>
+
+    <asp:ContentPlaceHolder ID="User_head" runat="server"></asp:ContentPlaceHolder>
+</head>
+
+<body class="theme-blush">
+    <form id="form1" runat="server">
+        <div class="page-loader-wrapper">
+            <div class="loader">
+                <div class="m-t-30">
+                    <asp:Image ID="ImgLoader" runat="server" ImageUrl="/Gorseller/loader.svg" Style="width: 48px; height: 48px;" CssClass="zmdi-hc-spin" />
+                </div>
+                <p>Lütfen Bekleyin...</p>
+            </div>
+        </div>
+
+        <div class="overlay"></div>
+
+
+        <div id="search">&nbsp;</div>
+
+
+        <aside id="leftsidebar" class="sidebar">
+            <div class="navbar-brand">
+                <button class="btn-menu ls-toggle-btn invisible" type="button"><i class="zmdi zmdi-menu"></i></button>
+                <asp:HyperLink ID="hyplnkArcadias" runat="server" NavigateUrl="https://www.arcadiastech.com" Target="_blank">
+                    <asp:Image ID="ImgLogo" runat="server" ImageUrl="~/Gorseller/logo.png" Style="width: 150px;" />
+                </asp:HyperLink>
+            </div>
+            <div class="menu">
+                <asp:ContentPlaceHolder ID="User_Menu" runat="server"></asp:ContentPlaceHolder>                
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <section class="content">
+            <div class="body_scroll">
+                <div class="container-fluid">
+                    <asp:ContentPlaceHolder ID="User_Icerik" runat="server"></asp:ContentPlaceHolder>
+                </div>
+            </div>
+
+            <button class="btn btn-primary btn-icon mobile_menu" type="button"><i class="zmdi zmdi-sort-amount-desc"></i></button>
+        </section>
+
+        <asp:ContentPlaceHolder ID="User_AltSayfa" runat="server"></asp:ContentPlaceHolder>
+
+        <div id="Uyari" class="modal" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header" id="UyariHead">
+                        <h5 class="modal-title" id="UyariBaslik"></h5>
+                    </div>
+                    <div class="modal-body" id="UyariIcerik">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-dismiss="modal" id="btn_UyariKapat"><i class="zmdi zmdi-close"></i>&nbsp;Kapat</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </form>
+</body>
+</html>

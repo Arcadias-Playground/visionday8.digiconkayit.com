@@ -1,0 +1,30 @@
+{
+  "name": "com.arcadiastech.lafetenationale",
+  "displayName": "LaFeteNationale_App",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "cordova-plugin-device": "^2.1.0",
+    "cordova-plugin-qr-barcode-scanner": "^8.0.3",
+    "cordova-plugin-splashscreen": "^6.0.1"
+  },
+  "cordova": {
+    "platforms": [],
+    "plugins": {
+      "cordova-plugin-device": {},
+      "cordova-plugin-qr-barcode-scanner": {
+        "ANDROID_SUPPORT_V4_VERSION": "27.+"
+      },
+      "cordova-plugin-splashscreen": {}
+    }
+  }
+}

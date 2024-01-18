@@ -1,0 +1,45 @@
+Connected to smtp://mail.arkadyas.com:587/
+S: 220-mailserver.solidpanel.net ESMTP mailserver.solidpanel.net; Sun, 25 Sep 2022 00:00:09 +0300
+S: 220 SolidPanel Mailserver 2021
+C: EHLO Altay-PC
+S: 250-mailserver.solidpanel.net Hello Altay-PC [24.133.136.176], pleased to meet you.
+S: 250-ENHANCEDSTATUSCODES
+S: 250-SIZE
+S: 250-EXPN
+S: 250-ETRN
+S: 250-ATRN
+S: 250-DSN
+S: 250-CHECKPOINT
+S: 250-8BITMIME
+S: 250-AUTH PLAIN LOGIN DIGEST-MD5 CRAM-MD5
+S: 250-STARTTLS
+S: 250-VRFY
+S: 250 HELP
+C: AUTH DIGEST-MD5
+S: 334 cmVhbG09Im1haWxzZXJ2ZXIuc29saWRwYW5lbC5uZXQiLG5vbmNlPSJZamRrTURNd1lqUmhaR0V3Iixxb3A9ImF1dGgiLGFsZ29yaXRobT1tZDUtc2Vzcw==
+C: ********
+S: 334 cnNwYXV0aD0yNTdkOTk3ODNlZDZmMWQxMDc3ZTM1MzViYWZhMGU3ZQ==
+C: 
+S: 235 2.0.0 Authentication successful
+C: MAIL FROM:<tagderdeutscheneinheit@arcadiastech.com> BODY=8BITMIME
+S: 250 2.1.0 <tagderdeutscheneinheit@arcadiastech.com>... Sender ok
+C: RCPT TO:<serhat@arkadyas.com> ORCPT=rfc822;serhat@arkadyas.com
+S: 250 2.1.5 <serhat@arkadyas.com>... Recipient ok
+C: DATA
+S: 354 Enter mail, end with "." on a line by itself
+C: From: Arcadias Tech <tagderdeutscheneinheit@arcadiastech.com>
+C: Date: Sun, 25 Sep 2022 00:00:09 +0300
+C: Subject: Arcadias Tech =?utf-8?b?WcSxbGJhxZ/EsQ==?= Parti Davetiyesi
+C: Message-Id: <RYAJTYTVYHU4.S7PLVADXTTNE@altay-pc>
+C: To: Altay Serhat =?utf-8?b?xLBuYW4=?= <serhat@arkadyas.com>
+C: MIME-Version: 1.0
+C: Content-Type: multipart/Mixed; boundary="=-KKcKIEbgYLC5hkNfYqYc4Q=="
+C: 
+C: --=-KKcKIEbgYLC5hkNfYqYc4Q==
+C: Content-Type: text/html; charset=utf-8
+C: Content-Transfer-Encoding: 8bit
+C: 
+C: <html lang='tr'><head><meta http-equiv='Content-Type' content='text/html; charset=utf-8'></head><body><p>Sayın Altay Serhat İnan</p><p><b>Bu davetiye iki kişiliktir. Lütfen size eşlik edecek olan kişi için de kayıt yaptırınız.</b>Davetiye kişiye özeldir ve başkasına devredilemez.</p><p>”Katılıyorum” butonuna tıkladığınızda, QR kodunuzu ve refakatçi kaydı için bir bağlantı içeren bir e-posta alacaksınız. Refakatçi kaydını tamamladıktan sonra tarafınıza, refakatçiniz için ikinci bir QR kodu gönderilecektir. Lütfen etkinliğe gelirken QR kodlarınızı ve fotoğraflı kimlik belgelerinizi yanınızda bulundurunuz.</p></body></html>
+C: --=-KKcKIEbgYLC5hkNfYqYc4Q==--
+C: .
+S: 250 2.6.0 2184 bytes received in 00:00:00; Message id 202209250000094189 accepted for delivery

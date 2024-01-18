@@ -1,0 +1,94 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/UserMaster.Master" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="ArcadiasDavet_Web.Admin.Admin" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="User_head" runat="server">
+    <asp:ContentPlaceHolder ID="Admin_head" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="User_Menu" runat="server">
+    <ul class="list">
+        <li>
+            <div class="user-info" style="justify-content: center;">
+                <div class="detail">
+                    <div id="h4_VersionNumber" class="m-2" style="font-weight: bold; word-break: break-all;" runat="server"></div>
+                    <small id="sml_User" runat="server"></small>
+                </div>
+            </div>
+        </li>
+        <li>
+            <asp:HyperLink ID="hyplnkAnaSayfa" runat="server" NavigateUrl="~/Admin"><i class="zmdi zmdi-home"></i><span>Ana Sayfa</span></asp:HyperLink>
+        </li>
+        <li>
+            <asp:HyperLink ID="hyplnkKullaniciIslemleri" runat="server" NavigateUrl="~/Admin/KullaniciIslemleri"><i class='zmdi zmdi-face'></i><span>Kullanıcı Listesi</span></asp:HyperLink>
+        </li>
+        <li>
+            <asp:HyperLink ID="hyplnkKatilimciTipiIslemleri" runat="server" NavigateUrl="~/Admin/KatilimciTipiIslemleri"><i class='zmdi zmdi-assignment-account'></i><span>Katılımcı Tipi İşlemleri</span></asp:HyperLink>
+        </li>
+        <li>
+            <asp:HyperLink ID="hyplnkKioskEkran" runat="server" NavigateUrl="~/Admin/KioskEkran"><i class='zmdi zmdi-desktop-windows'></i><span>Kiosk Ekran İşlemleri</span></asp:HyperLink>
+        </li>
+        <li>
+            <asp:HyperLink ID="hyplnkKatilimciIslemleri" runat="server" CssClass="menu-toggle" NavigateUrl="javascript:void(0);"><i class='zmdi zmdi-accounts'></i><span>Katılımcı İşlemleri</span></asp:HyperLink>
+
+            <ul class="ml-menu">
+                <li>
+                    <asp:HyperLink ID="hyplnkKatilimciListesi" runat="server" NavigateUrl="~/Admin/KatilimciIslemleri">Katılımcı Listesi</asp:HyperLink>
+                </li>
+                <li>
+                    <asp:HyperLink ID="hyplnkGirisListesi" runat="server" NavigateUrl="~/Admin/KatilimciIslemleri/GirisListesi">Giriş Yapanlar Listesi</asp:HyperLink>
+                </li>
+                 <li>
+                    <asp:HyperLink ID="hyplnkYakaKartiListesi" runat="server" NavigateUrl="~/Admin/KatilimciIslemleri/YakaKartiListesi">Yaka Kartı Basım Listesi</asp:HyperLink>
+                </li>
+
+            </ul>
+        </li>
+        <li>
+            <asp:HyperLink ID="hyplnkMailIslemleri" runat="server" CssClass="menu-toggle" NavigateUrl="javascript:void(0);"><i class='zmdi zmdi-inbox'></i><span>Mail & SMS İşlemleri</span></asp:HyperLink>
+            <ul class="ml-menu">
+                <li>
+                    <asp:HyperLink ID="hyplnkMailAyar" runat="server" NavigateUrl="~/Admin/MailIslemleri/MailGonderimAyar">Mail Gönderim Ayarları</asp:HyperLink>
+                </li>
+                <li>
+                    <asp:HyperLink ID="hyplnkMailBox" runat="server" NavigateUrl="~/Admin/MailIslemleri/MailBox">Mail Box</asp:HyperLink>
+                </li>
+                <li>
+                    <asp:HyperLink ID="hyplnkMailGonderimListesi" runat="server" NavigateUrl="~/Admin/MailIslemleri/MailGonderimListesi">Mail Gönderim Listesi</asp:HyperLink>
+                </li>
+                <li>
+                    <asp:HyperLink ID="hyplnkSmsGonderimListesi" runat="server" NavigateUrl="~/Admin/MailIslemleri/SmsGonderimListesi">Sms Gönderim Listesi</asp:HyperLink>
+                </li>
+            </ul>
+
+        </li>
+        <li>
+            <asp:HyperLink ID="hyplnkRaporlar" runat="server" CssClass="menu-toggle" NavigateUrl="javascript:void(0);"><i class='zmdi zmdi-help'></i><span>Raporlar</span></asp:HyperLink>
+            <ul class="ml-menu">
+                <li>
+                    <asp:HyperLink ID="hyplnkKatilimciRaporu" runat="server" NavigateUrl="~/Admin/Rapor/Katilimci">Katılımcı Raporu</asp:HyperLink>
+                </li>
+                <li>
+                    <asp:HyperLink ID="hyplnkGirisRaporu" runat="server" NavigateUrl="~/Admin/Rapor/Giris">Giriş Raporu</asp:HyperLink>
+                </li>
+                <li>
+                    <asp:HyperLink ID="hyplnkYakaKartiRaporu" runat="server" NavigateUrl="~/Admin/Rapor/YakaKarti">Yaka Kartı Raporu</asp:HyperLink>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <asp:LinkButton ID="lnkbtnCikis" runat="server" OnClick="lnkbtnCikis_Click">
+                <i class="fa fa-sign-out-alt"></i><span>Çıkış</span>
+            </asp:LinkButton>
+        </li>
+        <li>
+            <asp:Image ID="ImgDevBy" runat="server" Style="margin-top: 20px;" ImageUrl="~/Gorseller/DevBy.png" />
+        </li>
+    </ul>
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="User_Icerik" runat="server">
+    <asp:ContentPlaceHolder ID="Admin_Icerik" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="Content4" ContentPlaceHolderID="User_AltSayfa" runat="server">
+    <asp:ContentPlaceHolder ID="Admin_AltSayfa" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>

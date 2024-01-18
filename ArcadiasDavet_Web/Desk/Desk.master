@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/UserMaster.Master" AutoEventWireup="true" CodeBehind="Desk.master.cs" Inherits="ArcadiasDavet_Web.Desk.Desk" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="User_head" runat="server">
+     <asp:ContentPlaceHolder ID="Desk_head" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="User_Menu" runat="server">
+    <ul class="list">
+        <li>
+            <div class="user-info" style="justify-content: center;">
+                <div class="detail">
+                    <div id="h4_VersionNumber" class="m-2" style="font-weight: bold; word-break: break-all;" runat="server"></div>
+                    <small id="sml_User" runat="server"></small>
+                </div>
+            </div>
+        </li>
+        <li>
+            <asp:LinkButton ID="lnkbtnCikis" runat="server" OnClick="lnkbtnCikis_Click">
+                <i class="fa fa-sign-out-alt"></i><span>Çıkış</span>
+            </asp:LinkButton>
+        </li>
+        <li>
+            <asp:Image ID="ImgDevBy" runat="server" Style="margin-top: 20px;" ImageUrl="~/Gorseller/DevBy.png" />
+        </li>
+    </ul>
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="User_Icerik" runat="server">
+        <asp:ContentPlaceHolder ID="Deskk_Icerik" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="Content4" ContentPlaceHolderID="User_AltSayfa" runat="server">
+    <asp:ContentPlaceHolder ID="Desk_AltSayfa" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>

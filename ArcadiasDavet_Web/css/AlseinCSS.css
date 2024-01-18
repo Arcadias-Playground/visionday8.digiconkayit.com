@@ -1,0 +1,36 @@
+﻿.AlseinTable {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 3px;
+}
+
+    .AlseinTable td {
+        padding: 0 3px;
+    }
+
+        .AlseinTable td:first-child {
+            width: 8px;
+            color: #ff0000;
+        }
+
+        .AlseinTable td:nth-child(2) {
+            background: rgba(27,118,187,1);
+            background: -moz-linear-gradient(top, rgba(27,118,187,1) 0%, rgba(27,118,187,1) 0%, rgba(38,168,224,1) 100%);
+            background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(27,118,187,1)), color-stop(0%, rgba(27,118,187,1)), color-stop(100%, rgba(38,168,224,1)));
+            background: -webkit-linear-gradient(top, rgba(27,118,187,1) 0%, rgba(27,118,187,1) 0%, rgba(38,168,224,1) 100%);
+            background: -o-linear-gradient(top, rgba(27,118,187,1) 0%, rgba(27,118,187,1) 0%, rgba(38,168,224,1) 100%);
+            background: linear-gradient(to bottom, rgba(27,118,187,1) 0%, rgba(27,118,187,1) 0%, rgba(38,168,224,1) 100%);
+            color: white;
+            border-radius: 3px;
+            text-align: center;
+            width:150px;
+        }
+
+tr[role=row] td, tr[role=row] th {
+    vertical-align: middle;
+}
+
+.modal-container{
+    min-width:80vw;
+    min-height:70vh;
+}

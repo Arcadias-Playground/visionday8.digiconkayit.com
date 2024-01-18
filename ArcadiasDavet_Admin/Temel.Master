@@ -1,0 +1,99 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Temel.master.cs" Inherits="ArcadiasDavet_Admin.Temel" %>
+
+<!DOCTYPE html>
+
+<html class="no-js " lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+    <meta name="description" content="Arcadias Tech digiAbstract" />
+    <meta name="author" content="Altay Serhat İnan (Arcadias Tech) [serhat@arcadias.com / +90 506 953 14 36 / +90 507 574 16 40]" />
+
+    <title>Arcadias Tech digiAbstract Admin Panel</title>
+
+    <link rel="icon" href='<%=ResolveClientUrl("~/Gorseller/favicon.ico") %>' type="image/x-icon" />
+
+    <link rel="stylesheet" href='<%=ResolveClientUrl("~/css/bootstrap.min.css") %>' />
+    <link rel="stylesheet" href='<%=ResolveClientUrl("~/css/style.min.css") %>' />
+    <link rel="stylesheet" href='<%=ResolveClientUrl($"~/css/AlseinCSS.min.css?t={DateTime.Now.Ticks}") %>' />
+
+    <script type="text/javascript" src='<%=ResolveClientUrl("~/js/libscripts.bundle.js") %>'></script>
+    <script type="text/javascript" src='<%=ResolveClientUrl("~/js/vendorscripts.bundle.js") %>'></script>
+    <script type="text/javascript" src='<%=ResolveClientUrl("~/js/mainscripts.bundle.js") %>'></script>
+    <script type="text/javascript" src='<%=ResolveClientUrl("~/js/bootstrap-notify.min.js") %>'></script>
+    <script type="text/javascript" src='<%=ResolveClientUrl("~/js/AlseinJS.min.js") %>'></script>
+
+    <asp:ContentPlaceHolder ID="Temel_head" runat="server"></asp:ContentPlaceHolder>
+</head>
+
+<body class="theme-blush">
+    <form id="form1" runat="server">
+        <div class="page-loader-wrapper">
+            <div class="loader">
+                <div class="m-t-30">
+                    <asp:Image ID="ImgLoader" runat="server" ImageUrl="/Gorseller/loader.svg" Style="width: 48px; height: 48px;" CssClass="zmdi-hc-spin" />
+                </div>
+                <p>Lütfen Bekleyin...</p>
+            </div>
+        </div>
+
+        <div class="overlay"></div>
+
+
+        <div id="search">&nbsp;</div>
+
+
+        <aside id="leftsidebar" class="sidebar">
+            <div class="navbar-brand">
+                <button class="btn-menu ls-toggle-btn invisible" type="button"><i class="zmdi zmdi-menu"></i></button>
+                <asp:HyperLink ID="hyplnkArcadias" runat="server" NavigateUrl="~/Yonetim">
+                    <asp:Image ID="ImgLogo" runat="server" ImageUrl="/Gorseller/logo.svg" Style="width: 150px;" />
+                </asp:HyperLink>
+            </div>
+            <div class="menu">
+                <ul class="list">
+                    <li>
+                        <div class="user-info" style="justify-content: center;">
+                            <div class="detail">
+                                <div id="h4_VersionNumber" class="m-2" style="font-weight:bold; word-break: break-all;" runat="server"></div>
+                                <small id="sml_User" runat="server"></small>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <asp:HyperLink ID="hyplnkAnaSayfa" runat="server" NavigateUrl="~/Yonetim"><i class="zmdi zmdi-home"></i><span>Ana Sayfa</span></asp:HyperLink>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <section class="content">
+            <div class="body_scroll">
+                <div class="container-fluid">
+                    <asp:ContentPlaceHolder ID="Temel_Icerik" runat="server"></asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </section>
+
+        <asp:ContentPlaceHolder ID="Temel_AltSayfa" runat="server"></asp:ContentPlaceHolder>
+
+        <div id="Uyari" class="modal" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header" id="UyariHead">
+                        <h5 class="modal-title" id="UyariBaslik"></h5>
+                    </div>
+                    <div class="modal-body" id="UyariIcerik">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-dismiss="modal" id="btn_UyariKapat"><i class="zmdi zmdi-close"></i>&nbsp;Kapat</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </form>
+</body>
+</html>

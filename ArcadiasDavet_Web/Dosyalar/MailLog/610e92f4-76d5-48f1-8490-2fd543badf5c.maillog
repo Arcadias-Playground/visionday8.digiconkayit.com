@@ -1,0 +1,86 @@
+Connected to smtp://mail.arkadyas.com:587/
+S: 220-mailserver.solidpanel.net ESMTP mailserver.solidpanel.net; Mon, 05 Dec 2022 18:13:14 +0300
+S: 220 SolidPanel Mailserver 2021
+C: EHLO Altay-PC
+S: 250-mailserver.solidpanel.net Hello Altay-PC [95.13.61.103], pleased to meet you.
+S: 250-ENHANCEDSTATUSCODES
+S: 250-SIZE
+S: 250-EXPN
+S: 250-ETRN
+S: 250-ATRN
+S: 250-DSN
+S: 250-CHECKPOINT
+S: 250-8BITMIME
+S: 250-AUTH PLAIN LOGIN DIGEST-MD5 CRAM-MD5
+S: 250-STARTTLS
+S: 250-VRFY
+S: 250 HELP
+C: AUTH DIGEST-MD5
+S: 334 cmVhbG09Im1haWxzZXJ2ZXIuc29saWRwYW5lbC5uZXQiLG5vbmNlPSJNalZqTnpSaU1XSmlNVFEwIixxb3A9ImF1dGgiLGFsZ29yaXRobT1tZDUtc2Vzcw==
+C: ********
+S: 334 cnNwYXV0aD02NGU1ZGJjMzU3NjE3NWU3YzRjMzdkYjM1ZDdiMzZlNA==
+C: 
+S: 235 2.0.0 Authentication successful
+C: MAIL FROM:<info@arkadyas.com> BODY=8BITMIME
+S: 250 2.1.0 <info@arkadyas.com>... Sender ok
+C: RCPT TO:<serhat@arkadyas.com> ORCPT=rfc822;serhat@arkadyas.com
+S: 250 2.1.5 <serhat@arkadyas.com>... Recipient ok
+C: DATA
+S: 354 Enter mail, end with "." on a line by itself
+C: From: Arcadias Tech <info@arkadyas.com>
+C: Date: Mon, 05 Dec 2022 18:13:09 +0300
+C: Subject: Arcadias Tech =?utf-8?b?WcSxbGJhxZ/EsSBFdGtpbmxpxJ9p?= Daveti
+C: Message-Id: <O10U8A0VKIU4.JVOPC0XHBPKM2@altay-pc>
+C: To: Ali =?utf-8?b?WcO8Y2Vs?= <serhat@arkadyas.com>
+C: MIME-Version: 1.0
+C: Content-Type: multipart/Mixed; boundary="=-jz1+JEJPoVJs6/8QiNFezw=="
+C: 
+C: --=-jz1+JEJPoVJs6/8QiNFezw==
+C: Content-Type: text/html; charset=utf-8
+C: Content-Transfer-Encoding: 8bit
+C: 
+C: <p>Sayın Ali Yücel,</p>
+C: 
+C: <p><strong>Bu davetiye iki kişiliktir. L&uuml;tfen size eşlik edecek olan kişi i&ccedil;in de kayıt yaptırınız.</strong>Davetiye kişiye &ouml;zeldir ve başkasına devredilemez.</p>
+C: 
+C: <p>&rdquo;Katılıyorum&rdquo; butonuna tıkladığınızda, QR kodunuzu ve refakat&ccedil;i kaydı i&ccedil;in bir bağlantı i&ccedil;eren bir e-posta alacaksınız. Refakat&ccedil;i kaydını tamamladıktan sonra tarafınıza, refakat&ccedil;iniz i&ccedil;in ikinci bir QR kodu g&ouml;nderilecektir. L&uuml;tfen etkinliğe gelirken QR kodlarınızı ve fotoğraflı kimlik belgelerinizi yanınızda bulundurunuz.</p>
+C: --=-jz1+JEJPoVJs6/8QiNFezw==
+C: Content-Type: application/pdf; name=Davetiye.pdf
+C: Content-Disposition: attachment; filename=Davetiye.pdf
+C: Content-Transfer-Encoding: base64
+C: 
+C: JVBERi0xLjQKMSAwIG9iago8PAovVGl0bGUgKP7/KQovQ3JlYXRvciAo/v8AdwBrAGgAdABtAGwA
+C: dABvAHAAZABmACAAMAAuADEAMgAuADYpCi9Qcm9kdWNlciAo/v8AUQB0ACAANAAuADgALgA3KQov
+C: Q3JlYXRpb25EYXRlIChEOjIwMjIxMjA1MTgxNzM1KzAzJzAwJykKPj4KZW5kb2JqCjMgMCBvYmoK
+C: PDwKL1R5cGUgL0V4dEdTdGF0ZQovU0EgdHJ1ZQovU00gMC4wMgovY2EgMS4wCi9DQSAxLjAKL0FJ
+C: UyBmYWxzZQovU01hc2sgL05vbmU+PgplbmRvYmoKNCAwIG9iagpbL1BhdHRlcm4gL0RldmljZVJH
+C: Ql0KZW5kb2JqCjYgMCBvYmoKPDwKL1R5cGUgL0Fubm90Ci9TdWJ0eXBlIC9MaW5rCi9SZWN0IFs0
+C: Mi43NTAwMDAwICAxOTQgIDI2NyAgMjQyIF0KL0JvcmRlciBbMCAwIDBdCi9BIDw8Ci9UeXBlIC9B
+C: Y3Rpb24KL1MgL1VSSQovVVJJIChodHRwczovL2xvY2FsaG9zdDo0NDMyNy8vS2F0aWxpbWNpL09u
+C: YXkvZW1haWwvNjEwZTkyZjQtNzZkNS00OGYxLTg0OTAtMmZkNTQzYmFkZjVjKQo+Pgo+PgplbmRv
+C: YmoKNyAwIG9iago8PAovVHlwZSAvQW5ub3QKL1N1YnR5cGUgL0xpbmsKL1JlY3QgWzMyNCAgMTk0
+C: Ljc1MDAwMCAgNTQ4LjI1MDAwMCAgMjQwLjUwMDAwMCBdCi9Cb3JkZXIgWzAgMCAwXQovQSA8PAov
+C: VHlwZSAvQWN0aW9uCi9TIC9VUkkKL1VSSSAoaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzMjcvL0thdGls
+C: aW1jaS9SZWQvZW1haWwvNjEwZTkyZjQtNzZkNS00OGYxLTg0OTAtMmZkNTQzYmFkZjVjKQo+Pgo+
+C: PgplbmRvYmoKOCAwIG9iago8PAovVHlwZSAvQ2F0YWxvZwovUGFnZXMgMiAwIFIKPj4KZW5kb2Jq
+C: CjUgMCBvYmoKPDwKL1R5cGUgL1BhZ2UKL1BhcmVudCAyIDAgUgovQ29udGVudHMgOSAwIFIKL1Jl
+C: c291cmNlcyAxMSAwIFIKL0Fubm90cyAxMiAwIFIKL01lZGlhQm94IFswIDAgNTk1IDg0Ml0KPj4K
+C: ZW5kb2JqCjExIDAgb2JqCjw8Ci9Db2xvclNwYWNlIDw8Ci9QQ1NwIDQgMCBSCi9DU3AgL0Rldmlj
+C: ZVJHQgovQ1NwZyAvRGV2aWNlR3JheQo+PgovRXh0R1N0YXRlIDw8Ci9HU2EgMyAwIFIKPj4KL1Bh
+C: dHRlcm4gPDwKPj4KL0ZvbnQgPDwKPj4KL1hPYmplY3QgPDwKPj4KPj4KZW5kb2JqCjEyIDAgb2Jq
+C: ClsgNiAwIFIgNyAwIFIgXQplbmRvYmoKOSAwIG9iago8PAovTGVuZ3RoIDEwIDAgUgovRmlsdGVy
+C: IC9GbGF0ZURlY29kZQo+PgpzdHJlYW0KeJzTdw9OVEgvVtB3Di5QSIbSzsFcBnrmpgYQoACCuqgC
+C: FiZGCsm5XIUKhVyBXIFAEkaDJHO5zC2N9CyBwMIIyM1B5hoaGhnpWViYW5oDxQ3QuSDFGVzhWgp5
+C: XEgGKwRyAQD4PyNYCmVuZHN0cmVhbQplbmRvYmoKMTAgMCBvYmoKMTAyCmVuZG9iagoyIDAgb2Jq
+C: Cjw8Ci9UeXBlIC9QYWdlcwovS2lkcyAKWwo1IDAgUgpdCi9Db3VudCAxCi9Qcm9jU2V0IFsvUERG
+C: IC9UZXh0IC9JbWFnZUIgL0ltYWdlQ10KPj4KZW5kb2JqCnhyZWYKMCAxMwowMDAwMDAwMDAwIDY1
+C: NTM1IGYgCjAwMDAwMDAwMDkgMDAwMDAgbiAKMDAwMDAwMTMwNCAwMDAwMCBuIAowMDAwMDAwMTYz
+C: IDAwMDAwIG4gCjAwMDAwMDAyNTggMDAwMDAgbiAKMDAwMDAwMDc5OSAwMDAwMCBuIAowMDAwMDAw
+C: Mjk1IDAwMDAwIG4gCjAwMDAwMDA1MTYgMDAwMDAgbiAKMDAwMDAwMDc1MCAwMDAwMCBuIAowMDAw
+C: MDAxMTA3IDAwMDAwIG4gCjAwMDAwMDEyODQgMDAwMDAgbiAKMDAwMDAwMDkxOSAwMDAwMCBuIAow
+C: MDAwMDAxMDc1IDAwMDAwIG4gCnRyYWlsZXIKPDwKL1NpemUgMTMKL0luZm8gMSAwIFIKL1Jvb3Qg
+C: OCAwIFIKPj4Kc3RhcnR4cmVmCjE0MDIKJSVFT0YK
+C: 
+C: --=-jz1+JEJPoVJs6/8QiNFezw==--
+C: .
+S: 250 2.6.0 4675 bytes received in 00:00:00; Message id 202212051813152864 accepted for delivery
